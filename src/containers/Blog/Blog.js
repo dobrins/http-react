@@ -9,7 +9,7 @@ import './Blog.css';
 class Blog extends Component {
 
     state = {
-        posts : [],
+        posts : [], 
         selectedPostId: null
     }
 
