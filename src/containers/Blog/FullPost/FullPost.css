@@ -29,7 +29,9 @@
 }
 
 .Edit button.Delete {
-    color: red;
+    background: red;
+    color: #fff;
+    padding:10px;
 }
 
 .Edit button.Delete:hover,
