@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom'; 
+import { Route, NavLink } from 'react-router-dom'; 
 import './Blog.css';
 import Posts from './Posts/Posts';
 import NewPost from './NewPost/NewPost';
@@ -7,24 +7,21 @@ import NewPost from './NewPost/NewPost';
 class Blog extends Component {
 
     render () {    
-
-    //    const errorDiv = (this.state.error) ? 
-    //     <h2 style={{background: 'red', color: 'white'}}><strong>ERROR!!!</strong></h2>
-    //     :
-    //     null;
-
         return (
             <div className="Blog">
                 {/* {errorDiv} */}
                 <header>
                      <nav>
                         <ul>
-                            <li><Link to="/">Home</Link></li>
-                            <li><Link
+                            <li><NavLink 
+                                    to="/" 
+                                    exact
+                                    activeClassName="active">Home</NavLink></li>
+                            <li><NavLink
                                 to={{
                                     pathname: '/new-post',
                                     search: '?skip_system_check=1'
-                                }}>New post</Link>
+                                }}>New post</NavLink>
                             </li>
                         </ul>
                      </nav>

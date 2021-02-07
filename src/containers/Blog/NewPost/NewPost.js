@@ -10,11 +10,11 @@ class NewPost extends Component {
         author: 'Max'
     }
 
-    componentDidMount(){
+    // componentDidMount(){
 
-        console.log(this.props);
+    //     console.log(this.props.match.url);
 
-    }
+    // }
  
     postDataHandler = () => {
         const post = {
